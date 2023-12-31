@@ -7,8 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build:staging": "env-cmd -f .env.staging npm run build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "preview": "vite preview"
   },
